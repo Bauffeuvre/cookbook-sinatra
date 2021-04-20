@@ -1,0 +1,13 @@
+<% @recipes.each_with_index do |recipe, index| %>
+  <div>
+  <li>
+    <%="#{index} - #{recipe.name}" %>
+    <a class="btn btn-delete">Delete</a>
+    <a class="btn btn-mark_as_read">Mark as read</a>
+  </li>
+  </div>
+<% end %>
+
+<a href="http://localhost:4567/new">NEW</a>
+<%# 
+
